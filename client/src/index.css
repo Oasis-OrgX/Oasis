@@ -1,0 +1,69 @@
+/*
+============
+Variables
+============
+*/
+
+:root{
+    --clr-bg: hsl(14, 91%, 95%);
+    --clr-bg-2:#E5E5E5;
+    /* shades of primary color*/
+    --clr-primary-1:#061146;
+    --clr-primary-2:#1239EC;
+    --clr-primary-3:#1477F8;
+    --clr-primary-4:#04DFE9;
+    /* complimentary colors */
+    --clr-comp-1-dark-blue-2:#043345;
+    --clr-comp-2-blue1:#0D9AAC;
+    --clr-comp-3-blue2:#00B6C7;
+    --clr-comp-4-green1:#009966;
+    --clr-comp-5-green2:#00FF99;
+    --clr-comp-6-pink1:#F65868;
+    /* shades of grey */
+    --clr-grey-1: #818181;
+    --clr-grey-2:#292929;
+    --clr-grey-3:#0F0F0F;
+    --clr-grey-4:#FDFDFD;
+}
+/*
+=====================
+Basic Styles Reset 
+=====================
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+===============
+Import Fonts
+===============
+*/
+
+/* 
+==============
+Main Styles 
+==============
+*/
+body{
+    background: var(--clr-bg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.container h1{
+    text-transform: capitalize;
+}
+
+
+
