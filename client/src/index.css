@@ -42,28 +42,17 @@ Basic Styles Reset
 Import Fonts
 ===============
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 /* 
 ==============
 Main Styles 
 ==============
 */
 body{
-    background: var(--clr-bg);
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
-    width: 100vw;
-    text-align: center;
 }
 
-.container h1{
-    text-transform: capitalize;
-}
 
 
 

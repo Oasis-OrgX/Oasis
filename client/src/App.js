@@ -1,14 +1,11 @@
 import React from 'react';
+import GuestPage from './pages/guestpage'
+
 
 const App = ()=>{
     return (
       <>
-        <div className="container">
-          <h1>
-            your project setup was done ! <br />
-            - Oasis
-          </h1>
-        </div>
+        <GuestPage></GuestPage>
       </>
     );
 }
