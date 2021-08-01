@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --col-btn-text: hsla(197, 89%, 14%, 1);
+  --col-btn-background: #00ff99;
+  --col-btn-outline: hsla(156, 100%, 50%, 1);
+  --col-solid-white: #fdfdfd;
+}
+
+.btn--green-solid {
+  background: var(--col-btn-background);
+  color: var(--col-btn-text);
+  border: none;
+  outline: 1px solid var(--col-btn-background);
+  /* Optional Margin */
+  margin: 0.3125rem;
+  padding: 0.3125rem;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.btn--green-outline {
+  background: transparent;
+  color: var(--col-btn-outline);
+  outline: 1px solid var(--col-btn-outline);
+  margin: 0.3125rem;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.btn--white-solid {
+  background: var(--col-solid-white);
+  color: var(--col-btn-text);
+  margin: 0.3125rem;
+  border: none;
+  outline: 1px solid var(--col-btn-text);
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.btn--sign-up-size {
+  width: 8.25rem;
+  height: 2.8125rem;
+  font-size: 1.875rem;
+  border-radius: 0.625rem;
+}
+
+.btn--try-it-out-size {
+  width: 12rem;
+  height: 3.5625rem;
+  border-radius: 0.8125rem;
+  font-size: 1.875rem;
+  line-height: 2.473125rem;
+}
+.btn--get-started-size {
+  width: 15.875rem;
+  height: 3.5625rem;
+  border-radius: 0.8125rem;
+  font-size: 1.875rem;
+  line-height: 2.473125rem;
+}
