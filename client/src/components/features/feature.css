@@ -1,0 +1,44 @@
+/*
+============
+Variables
+============
+*/
+
+:root {
+  --clr-bg: hsl(14, 91%, 95%);
+  --clr-bg-2: #e5e5e5;
+  /* shades of primary color*/
+  --clr-primary-1: #061146;
+  --clr-primary-2: #1239ec;
+  --clr-primary-3: #1477f8;
+  --clr-primary-4: #04dfe9;
+  /* complimentary colors */
+  --clr-comp-1-dark-blue-2: #043345;
+  --clr-comp-2-blue1: #0d9aac;
+  --clr-comp-3-blue2: #00b6c7;
+  --clr-comp-4-green1: #009966;
+  --clr-comp-5-green2: #00ff99;
+  --clr-comp-6-pink1: #f65868;
+  /* shades of grey */
+  --clr-grey-1: #818181;
+  --clr-grey-2: #292929;
+  --clr-grey-3: #0f0f0f;
+  --clr-grey-4: #fdfdfd;
+}
+/*
+=====================
+Basic Styles Reset 
+=====================
+*/
+
+/* 
+===============
+Import Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* 
+==============
+Main Styles 
+==============
+*/
