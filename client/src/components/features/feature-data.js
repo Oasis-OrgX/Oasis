@@ -5,10 +5,14 @@
 */
 
 export default [
-    {
-        feature_info_tt:"",
-        feature_info_quick_updates:"",
-        feature_info_deadlines:"",
-        feature_info_resources:"",
-    }
-]
+  {
+    feature_info_tt:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ducimus! In amet cupiditate velit harum recusandae laborum aspernatur ratione, totam optio tempore ab? Eligendi qui velit esse inventore quasi nam?",
+    feature_info_quick_updates:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ducimus! In amet cupiditate velit harum recusandae laborum aspernatur ratione, totam optio tempore ab? Eligendi qui velit esse inventore quasi nam?",
+    feature_info_deadlines:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ducimus! In amet cupiditate velit harum recusandae laborum aspernatur ratione, totam optio tempore ab? Eligendi qui velit esse inventore quasi nam?",
+    feature_info_resources:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ducimus! In amet cupiditate velit harum recusandae laborum aspernatur ratione, totam optio tempore ab? Eligendi qui velit esse inventore quasi nam?",
+  },
+];
