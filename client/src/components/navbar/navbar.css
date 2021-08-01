@@ -1,12 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+background:#043345;
+}
+
+.content{
+    margin-top: 40px;
+    margin-left: -100px;
+}
+.content h1{
+    font-size: 40px;
+    font-family: roboto slab;
+    font-weight: 100;
+    color:#00b6C7;
+    text-align: center;
+}
+
+.content p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:roboto slab;
+    font-weight:300;
+    color:#FDFDFD;
+    text-align: center;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
-    height:auto;
     align-items: center;
     width: 100%;
+    padding: 5px 10px 0 0 ;
 }
 
 .nav-content{
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,48 +53,43 @@
 
 .nav-logo{
     display: flex;
+    color: #fff;;
     align-items: center;
     width: 70%;
-    font-size: 2rem;
+    font-size: 0.75rem; 
+    font-family: roboto slab;
     height: 100%;
 }
 
 .nav-menu{
-    width: 30%;
+    width: 25%;
     height: 100%;
 }
 
 
 .nav-menu ul{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 2rem;
+    justify-content:space-evenly;
+    font-size: 1.5rem;
     width: 100%;
     height: 100%;
     list-style-type: none;
     cursor: pointer;
 }
 
+.nav-menu ul li a{
+    text-decoration: none;
+    color:#043345;
+} 
+
 li{
     position: relative;
-    border-bottom: none;
-    transition: all 0.2s linear;
-    padding: 0.5rem;
+    font-size: 22px;
+    font-family: Roboto slab;
+    font-weight: 400;
+    background: #00FF99;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+
 }
 
-li::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: blueviolet;
-    width: 100%;
-    height: 3px;
-    transform: scaleX(0);
-    transition: transform 0.2s linear;
-}
-
-li:hover::before{
-    transform: scaleX(1);
-}
