@@ -1,88 +1,40 @@
 // Feature component
-import React from "react";
+import React,{useEffect, useState} from "react";
 import "./feature.css";
-import data from "./feature-data";
-import Button from "./../button/button";
-import { deadline } from "./../../assets/images/guestPage/deadline.svg";
-import { timetable } from "./../../assets/images/guestPage/timetable.svg";
-import { resource } from "./../../assets/images/guestPage/resource.svg";
-import { updates } from "./../../assets/images/guestPage/updates.svg";
+import Button from "../button/button";
+import deadlinesIcon from "./features-img/deadlines-icon.png"
 
-const Feature = () => {
-  const {
-    feature_info_tt: ttInfo,
-    feature_info_quick_updates: updatesInfo,
-    feature_info_deadlines: deadlinesInfo,
-    feature_info_resources: resourcesInfo,
-  } = data[0];
-  console.log(data[0].feature_info_tt);
-  return (
-    <>
-      <section className="features-section">
-        <h1 className="features-heading">features</h1>
+const URL = "https://source.unsplash.com/random/500x300";
 
-        {/* Timetable */}
-        <article className="features-container">
-          <div className="features-info">
-            <div className="feature-title">
-              <img className="icon" src={timetable} alt=""></img>
-              <h2 className="title-heading">time-table</h2>
+// const Feature = (imgSrc,style1,style2,defaultPattern) 
+const Feature = (props) => {
+ 
+  const {style,imgSrc,text,featureIcon,featureTextIconName,btnOnClick} = props;
+ 
+    return (
+      <div className={style}>
+        <div className="featureImg">
+          {/* <img src={imgSrc} alt="" /> */}
+          <img src={imgSrc} alt="" />
+        </div>
+        {/* <div className="featureText">{text}</div> */}
+        <div className="featureTextParent">
+          <div className="featureText">
+            <div className="featureTextIcon">
+              <h1>{featureTextIconName}</h1>
+              <img src={featureIcon} alt="" />
             </div>
-            <p>{ttInfo}</p>
-            <Button>try out</Button>
-          </div>
-          <div className="features-img">
-            <img src="" alt=""></img>
-          </div>
-        </article>
-
-        {/* updates */}
-        <article className="features-container">
-          <div className="features-img">
-            <img src="" alt=""></img>
-          </div>
-          <div className="features-info">
-            <div className="feature-title">
-              <img className="icon" src={updates} alt=""></img>
-              <h2 className="title-heading">quick updates</h2>
+            <div className="featureTextContent">
+              {text}
             </div>
-            <p>{updatesInfo}</p>
-            <Button>try out</Button>
-          </div>
-        </article>
-
-        {/* deadlines */}
-        <article className="features-container">
-          <div className="features-info">
-            <div className="feature-title">
-              <img className="icon" src={deadline} alt=""></img>
-              <h2 className="title-heading">deadlines</h2>
+            <div className="featureTextButton">
+              <Button onClick={btnOnClick} buttonSize="btn--try-it-out-size">Try it out</Button>
             </div>
-            <p>{deadlinesInfo}</p>
-            <Button>try out</Button>
           </div>
-          <div className="features-img">
-            <img src="" alt=""></img>
-          </div>
-        </article>
+        </div>
+      </div>
+    );
 
-        {/* resources */}
-        <article className="features-container">
-          <div className="features-img">
-            <img src="" alt=""></img>
-          </div>
-          <div className="features-info">
-            <div className="feature-title">
-              <img className="icon" src={resource} alt=""></img>
-              <h2 className="title-heading">resources</h2>
-            </div>
-            <p>{resourcesInfo}</p>
-            <Button>try out</Button>
-          </div>
-        </article>
-      </section>
-    </>
-  );
 };
 
 export default Feature;

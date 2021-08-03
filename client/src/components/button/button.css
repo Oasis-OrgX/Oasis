@@ -7,14 +7,11 @@
   --col-solid-white: #fdfdfd;
 }
 
+
 .btn--green-solid {
   background: var(--col-btn-background);
   color: var(--col-btn-text);
   border: none;
-  outline: 1px solid var(--col-btn-background);
-  /* Optional Margin */
-  margin: 0.3125rem;
-  padding: 0.3125rem;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
@@ -23,7 +20,6 @@
   background: transparent;
   color: var(--col-btn-outline);
   outline: 1px solid var(--col-btn-outline);
-  margin: 0.3125rem;
   border: none;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
@@ -31,7 +27,6 @@
 .btn--white-solid {
   background: var(--col-solid-white);
   color: var(--col-btn-text);
-  margin: 0.3125rem;
   border: none;
   outline: 1px solid var(--col-btn-text);
   font-family: "Roboto", sans-serif;
@@ -43,14 +38,17 @@
   height: 2.8125rem;
   font-size: 1.875rem;
   border-radius: 0.625rem;
+  padding: 0.3125rem;
+  letter-spacing: 2px;
 }
 
 .btn--try-it-out-size {
-  width: 12rem;
-  height: 3.5625rem;
+  width: 11rem;
+  height: 3rem;
   border-radius: 0.8125rem;
   font-size: 1.875rem;
   line-height: 2.473125rem;
+  letter-spacing: 2px;
 }
 .btn--get-started-size {
   width: 15.875rem;
@@ -58,4 +56,31 @@
   border-radius: 0.8125rem;
   font-size: 1.875rem;
   line-height: 2.473125rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 600px) {
+  .btn--sign-up-size {
+    width: 4.8rem;
+    height: 2.8125rem;
+    font-size: 1rem;
+    border-radius: 0.625rem;
+  }
+  .btn--get-started-size {
+  width: 9rem;
+  height: 3rem;
+  border-radius: 0.8125rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+     padding: 0.3125rem;
+
+}
+.btn--try-it-out-size {
+ width: 9rem;
+  height: 3rem;
+  border-radius: 0.8125rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: 0.3125rem;
+}
 }
