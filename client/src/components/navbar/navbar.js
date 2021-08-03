@@ -1,35 +1,112 @@
 import React from "react";
 import "./navbar.css";
+import Button from '../button/button'
+import logoImg from './logo1.png'
+import laptopImg from './laptop.png'
 
 const Navbar = () => {
   return (
     <>
+      <div className="navbar">
+        <div className="nav-content">
+          <div className="nav-logo">
+            <img src={logoImg} alt="" />
+            <h1>OASIS</h1>
+          </div>
+          <div className="nav-menu">
+            <ul>
+              <li>
+                <Button
+                  onClick={() => {
+                    console.log("Signup button");
+                  }}
+                  type="button"
+                  buttonStyle="btn--green-solid"
+                  buttonSize="btn--sign-up-size"
+                >
+                  Signup
+                </Button>
+              </li>
+              <li>
+                <Button
+                  onClick={() => {
+                    console.log("Login button");
+                  }}
+                  type="button"
+                  buttonStyle="btn--white-solid"
+                  buttonSize="btn--sign-up-size"
+                >
+                  Login
+                </Button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div className="header">
-        <div className="navbar">
+        {/* <div className="navbar">
           <div className="nav-content">
             <div className="nav-logo">
+              <img src={logoImg} alt="" />
               <h1>OASIS</h1>
             </div>
             <div className="nav-menu">
               <ul>
                 <li>
-                  <a href="#"> Log In </a>
+                  <Button
+                    onClick={() => {
+                      console.log("Signup button");
+                    }}
+                    type="button"
+                    buttonStyle="btn--green-solid"
+                    buttonSize="btn--sign-up-size"
+                  >
+                    Signup
+                  </Button>
                 </li>
                 <li>
-                  <a href="#"> Sign Up </a>
+                  <Button
+                    onClick={() => {
+                      console.log("Login button");
+                    }}
+                    type="button"
+                    buttonStyle="btn--white-solid"
+                    buttonSize="btn--sign-up-size"
+                  >
+                    Login
+                  </Button>
                 </li>
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="content">
-          <h1>
-            The simple and smart way <br /> to manage your college
-          </h1>
-          <p>
-            Prioritize and plan with ease in a beautifully <br /> designed
-            workspace
-          </p>
+          <div className="content-heading">
+            <h1>
+              The simple and smart way to manage <br /> your college work.
+            </h1>
+          </div>
+          <div className="content-para">
+            <p>
+              Prioritize and plan with ease in a beautifully <br /> designed
+              workspace
+            </p>
+          </div>
+          <div className="content-button">
+            <Button
+              onClick={() => {
+                console.log("Get started button");
+              }}
+              type="button"
+              buttonStyle="btn--green-solid"
+              buttonSize="btn--get-started-size"
+            >
+              Get Started
+            </Button>
+          </div>
+        </div>
+        <div className="content-laptop">
+          <img src={laptopImg} alt="" />
         </div>
       </div>
     </>

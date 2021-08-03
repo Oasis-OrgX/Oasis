@@ -1,44 +1,228 @@
-/*
-============
-Variables
-============
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
-:root {
-  --clr-bg: hsl(14, 91%, 95%);
-  --clr-bg-2: #e5e5e5;
-  /* shades of primary color*/
-  --clr-primary-1: #061146;
-  --clr-primary-2: #1239ec;
-  --clr-primary-3: #1477f8;
-  --clr-primary-4: #04dfe9;
-  /* complimentary colors */
-  --clr-comp-1-dark-blue-2: #043345;
-  --clr-comp-2-blue1: #0d9aac;
-  --clr-comp-3-blue2: #00b6c7;
-  --clr-comp-4-green1: #009966;
-  --clr-comp-5-green2: #00ff99;
-  --clr-comp-6-pink1: #f65868;
-  /* shades of grey */
-  --clr-grey-1: #818181;
-  --clr-grey-2: #292929;
-  --clr-grey-3: #0f0f0f;
-  --clr-grey-4: #fdfdfd;
+.feature{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 1rem;
 }
-/*
-=====================
-Basic Styles Reset 
-=====================
-*/
+
+
+.featureImg{
+  display: flex;
+}
+
+.featureImg img{
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 760px;
+  height: 400px;
+}
+
+
+.featureTextParent{
+  width: 100%;
+  height: 360px;
+}
+
+.featureText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.featureText div{
+  margin-bottom: 1rem;
+}
+
+.featureTextIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: auto;
+  background: linear-gradient(to bottom,#043345,transparent,#043345);
+  background: #043345;
+  padding:2.5rem 1rem;
+  border-radius: 10px;
+}
+
+.featureTextIcon img,.featureTextIcon h1{
+  margin: 0.5rem;
+  color: hsla(197, 89%, 14%, 1);
+  color: aliceblue;
+  letter-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+.featureTextIcon img{
+  width: 70px;
+  height: 70px;
+}
+
+.featureTextContent{
+  font-size: 1.5rem;
+  width: 600px;
+  font-weight: lighter;
+  font-family:"Roboto Slab",sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.featureReverse{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.featureReverse .featureImg img{
+  transform: scaleX(-1);
+}
+
+.featureReverse .featureTextIcon{
+  flex-direction: row-reverse;
+}
 
 /* 
-===============
-Import Fonts
-===============
+==================================
+Responsiveness for mobile phones
+==================================
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@media screen and (max-width:600px) {
+  .feature{
+    flex-direction: column;
+    align-items: center;
+}
+
+.featureReverse{
+  flex-direction: column;
+}
+.featureImg{
+  border-radius: 1000px;
+}
+.featureImg img{
+  width: 300px;
+  height: 310px;
+  border-radius: 2px;
+  outline: 5px solid #00ff99;
+}
+.featureTextParent{
+  margin-top: 1rem;
+  height: 300px;
+}
+.featureTextIcon{
+  height: 70px;
+  width: auto;
+  padding:0.3rem 0.1rem;
+  border-radius: 3px;
+  background: none;
+  outline: 1px solid #043345;
+}
+
+.featureTextIcon img,.featureTextIcon h1{
+  margin: 0.5rem;
+  color: hsla(197, 89%, 14%, 1);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+.featureTextIcon img{
+  width: 50px;
+  height: 50px;
+}
+.featureTextContent{
+  font-size: 1rem;
+  width: 300px;
+  font-weight: lighter;
+  font-family:"Roboto Slab",sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+}
+
 /* 
-==============
-Main Styles 
-==============
+==========================
+Responsiveness for Tabs
+==========================
 */
+@media screen and (max-width:860px) and (min-width:600px) {
+   .feature{
+    flex-direction: row;
+}
+
+.featureReverse{
+  flex-direction: row-reverse;
+}
+.featureImg img{
+  width: 400px;
+  height: 310px;
+  border-radius: 2px;
+  outline: 5px solid #00ff99;
+}
+.featureTextParent{
+  margin: 1rem;
+  height: 300px;
+}
+.featureTextIcon{
+  height: 70px;
+  width: auto;
+  padding:0.3rem 0.1rem;
+  border-radius: 3px;
+  background: none;
+  outline: 1px solid #043345;
+}
+
+.featureTextIcon img,.featureTextIcon h1{
+  margin: 0.5rem;
+  color: hsla(197, 89%, 14%, 1);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+.featureTextIcon img{
+  width: 50px;
+  height: 50px;
+}
+.featureTextContent{
+  font-size: 1rem;
+  width: 300px;
+  font-weight: lighter;
+  font-family:"Roboto Slab",sans-serif;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+}
+
+@media screen and (max-width:700px) and (min-width:400px){
+  .featureImg img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  outline: 5px solid #00ff99;
+  margin: 10px;
+}
+}
+
+@media screen and (max-width:1380px) and (min-width:860px){
+  .featureImg img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  outline: 5px solid #00ff99;
+}
+.featureTextParent{
+  margin: 1rem;
+   width: 100%;
+  height: auto;
+}
+}
+
