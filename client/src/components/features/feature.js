@@ -3,12 +3,10 @@ import React from "react";
 import "./feature.css";
 import data from "./feature-data";
 import Button from "./../button/button";
-import {
-  deadline,
-  resource,
-  timetable,
-  updates,
-} from "./../../assets/images/guestPage/";
+import { deadline } from "./../../assets/images/guestPage/deadline.svg";
+import { timetable } from "./../../assets/images/guestPage/timetable.svg";
+import { resource } from "./../../assets/images/guestPage/resource.svg";
+import { updates } from "./../../assets/images/guestPage/updates.svg";
 
 const Feature = () => {
   const {

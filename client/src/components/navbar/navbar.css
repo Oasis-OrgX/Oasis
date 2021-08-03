@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-
-
 *{
     padding: 0;
     margin: 0;
@@ -16,9 +14,10 @@ background:#043345;
     margin-top: 40px;
     margin-left: -100px;
 }
+
 .content h1{
     font-size: 40px;
-    font-family: roboto slab;
+    font-family: "Roboto Slab";
     font-weight: 100;
     color:#00b6C7;
     text-align: center;
@@ -65,7 +64,6 @@ background:#043345;
     width: 25%;
     height: 100%;
 }
-
 
 .nav-menu ul{
     display: flex;

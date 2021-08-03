@@ -11,7 +11,6 @@ import Footer from "../components/footer/footer";
 const GuestPage = () => {
   return (
     <>
-<<<<<<< Updated upstream
       <Navbar></Navbar>
       <Button
         onClick={() => {
@@ -66,15 +65,6 @@ const GuestPage = () => {
       <Feature></Feature>
       <Video></Video>
       <Footer></Footer>
-=======
-      <body style={{ backGround: "#043345" }}>
-        <Navbar></Navbar>
-        <Button></Button>
-        <Feature></Feature>
-        <Video></Video>
-        <Footer></Footer>
-      </body>
->>>>>>> Stashed changes
     </>
   );
 };
