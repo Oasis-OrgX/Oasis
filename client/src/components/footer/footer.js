@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Footer.css";
+import "./footer.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";

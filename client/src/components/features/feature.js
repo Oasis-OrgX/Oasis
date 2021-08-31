@@ -1,7 +1,7 @@
 // Feature component
 import React, { useEffect, useState } from "react";
-import "./Feature.css";
-import Button from "../button/Button";
+import "./feature.css";
+import Button from "../button/button";
 import deadlinesIcon from "./features-img/deadlines-icon.png";
 
 const URL = "https://source.unsplash.com/random/500x300";

@@ -1,6 +1,6 @@
 import React from "react";
-import "./Navbar.css";
-import Button from '../button/Button'
+import "./navbar.css";
+import Button from '../button/button'
 import logoImg from './logo1.png'
 import laptopImg from './laptop.png'
 

@@ -1,10 +1,10 @@
 import React from "react";
 import "./GuestPage.css";
 // Importing all the required components known as of now.
-import Navbar from "../../components/navbar/Navbar";
-import Feature from "../../components/features/Feature";
-import Video from "../../components/video/Video";
-import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/navbar";
+import Feature from "../../components/features/feature";
+import Video from "../../components/video/video";
+import Footer from "../../components/footer/footer";
 // Importing Data
 import featuresData from "../../components/features/feature-data";
 
