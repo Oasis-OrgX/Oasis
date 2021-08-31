@@ -1,5 +1,5 @@
 import React from "react";
-import "./button.css";
+import "./Button.css";
 
 const STYLES = ["btn--green-solid", "btn--green-outline", "btn--white-solid"];
 

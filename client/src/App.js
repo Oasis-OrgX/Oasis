@@ -1,5 +1,5 @@
 import React from 'react';
-import GuestPage from './pages/guestpage'
+import GuestPage from './pages/guestpage/GuestPage'
 
 
 const App = ()=>{

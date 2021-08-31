@@ -1,12 +1,12 @@
 import React from "react";
-import "./guestpage.css";
+import "./GuestPage.css";
 // Importing all the required components known as of now.
-import Navbar from "../components/navbar/navbar";
-import Feature from "../components/features/feature";
-import Video from "../components/video/video";
-import Footer from "../components/footer/footer";
+import Navbar from "../../components/navbar/Navbar";
+import Feature from "../../components/features/Feature";
+import Video from "../../components/video/Video";
+import Footer from "../../components/footer/Footer";
 // Importing Data
-import featuresData from "../components/features/feature-data";
+import featuresData from "../../components/features/feature-data";
 
 console.log(featuresData);
 
@@ -22,7 +22,7 @@ const GuestPage = () => {
         <div className="feature-components">
           {featuresData.map((feature, index) => {
             return <Feature key={index} {...feature}></Feature>;
-          })}
+          })}s
         </div>
       </div>
       {/* <Video></Video>
