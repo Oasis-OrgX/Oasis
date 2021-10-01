@@ -27,7 +27,7 @@ Fixes : #<insert_issue_number_here>
 - [] I have performed a self-review of my own code or work. 🔎
 - [] I have written comments in the code whenever felt necessary. 🖊️
 - [] I am contributing to this project for the first time. 🆕
-- [] My changes generates no new warnings. ⚠️
+- [] My changes generate no new warnings. ⚠️
 
 <hr>
 
