@@ -31,8 +31,12 @@ Fixes : #<insert_issue_number_here>
 
 <hr>
 
-## Screenshots / Gif (Optional) 📸
+## Screenshots 📸
 
 <!--you can optionally put the screenshot/gif of your final change  -->
+
+   Original     |   Updated
+:-------------------:|:-------------------:|
+insert original screenshot  |insert updated screenshot
 
 <hr>
